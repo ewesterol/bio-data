@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="index.css">
+    <title>Login Bio-data</title>
+</head>
+<body>
+    <div class="box">
+        <div class="hero">
+            <div class="top-header">
+                <h1 class="title">Personal data</h1>
+                <h3 class="subtitle">Fields with <span>*</span> are mandatory.</h3>
+                <input type="text" class="top-header-input" placeholder="Full name">
+            </div>
+            
+            <h2 class="profile-title">Profile picture</h2>
+            <div class="profile-pic">
+            
+                <div class="profile-item">
+                    <img src="data:image/png;base64,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"
+                        alt="">
+                    <div class="cam-icon">
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+            
+                </div>
+                <div class="img-desc">
+                    <p>Drop your file here or <span class="img-select">Select a file</span></p>
+                    <p>Only <span class="img-jp">JPEG, JPG & PNG</span> are allowed up to <span class="img-jp">3mb</span> in size
+                    </p>
+                </div>
+            </div>
+            <form>
+                <div class="input-field">
+                    <div class="input-container">
+                        <input type="text" class="input" placeholder="Birthdate">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" class="input" placeholder="Country">
+                    </div>
+                </div>
+                <div class="input-mother">
+                    <input type="text" class="input" placeholder="Mother's name">
+                </div>
+                <div class="input-field">
+                    <div class="input-container">
+                        <input type="text" class="input" placeholder="Gender">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" class="input" placeholder="Color or race">
+                    </div>
+                </div>
+                <div class="input-field">
+                    <div class="input-container">
+                        <input type="text" class="input" placeholder="Marital status">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" class="input" placeholder="Special needs">
+                    </div>
+                </div>
+                <div class="input-field">
+                    <div class="input-container">
+                        <input type="text" class="input" placeholder="State">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" class="input" placeholder="City">
+                    </div>
+                </div>
+            </form>
+            <div class="bottom-container">
+                <div class="back">
+                    <i class="fa fa-arrow-left"></i>
+                    <input type="submit" value="Back">
+                </div>
+                <div class="next">
+                    <input type="submit" value="Next">
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</body>
+</html>

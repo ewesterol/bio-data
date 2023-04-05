@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Happy+Monkey&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Orbitron:wght@400;800&family=Poppins:wght@200;300;400;500;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif , 'Poppins';
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+    background-color: blue;
+    
+    
+}
+.box{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    max-height: 100%;
+    padding: 20px;
+    
+    
+    
+    background-color: white;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.title{
+    font-size: 30px;
+    line-height: 40px;
+}
+.subtitle{
+    font-weight: 300;
+    font-size: 15px;
+}
+.subtitle span{
+    color: red;
+}
+.top-header input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px blue;
+}
+.profile-title{
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-top: 30px;
+    
+}
+.profile-pic{
+    display: flex;
+    align-items: center;
+    border: 2px dashed grey;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.profile-item{
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    position: relative;
+    margin-right: 20px;
+}
+.profile-item img{
+    width: 70px;
+    height: 70px;
+}
+.cam-icon{
+    position: absolute;
+    top: 50px;
+    right: 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 7px;
+   
+}
+.img-desc{
+    width: 350px;
+    
+    
+}
+.img-desc p{
+    font-size: 12px;
+    margin: 3px;
+}
+.img-desc .img-select{
+    color: blue;
+    font-weight: 700;
+}
+.img-desc .img-jp {
+    color: black;
+    font-weight: 600;
+}
+.input-field{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.input{
+    width: 100%;
+   padding: 10px;
+   border: 1px solid grey;
+   margin-top: 15px;
+    border-radius: 5px;
+}
+.input-container{
+    width: 47%;
+}
+.bottom-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+}
+.back, .next{
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    min-width: 10vw;
+    border-radius: 5px;
+    padding: 5px;
+}
+.next{
+    background-color: blue;
+}
+.next input{
+    border: none;
+    background-color: blue;
+    color: white;
+}
+.back input{
+    border: none;
+    background-color: white;
+    color: blue;
+    
+
+}
+.back i{
+    margin-right: 5px;
+    color: blue;
+    
+}
+.next i {
+    margin-left: 5px;
+    color: white;
+}
+@media screen and (max-width: 450px){
+    body{background-color: white;}
+   
+    .box{
+        width: 100%;
+        max-height: 50%;
+        display: flex;
+        flex-direction: column;
+        
+       padding: 40px;
+        border-radius: 5px;
+       
+    }
+    .hero{
+        height: 100%;
+        
+    }
+    .input-field{
+        display: flex;
+        flex-direction: column;
+    }
+    .input-container{
+        width: 100%;
+        
+    }
+}
